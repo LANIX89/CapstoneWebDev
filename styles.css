@@ -1,0 +1,196 @@
+@font-face {
+  src: url(fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+  font-family: Libre_Baskerville;
+}
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("images/TAGUIG\ CITY\ UNIVERSITY\ ADMISSION.png");
+  background-color: rgb(224, 216, 205);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav ul {
+  margin: 0;
+}
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-nav li {
+  padding: 0 3%;
+}
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: multiply;
+  padding: 30px;
+  position: center;
+  min-width: 1000px;
+}
+
+.main-footer {
+  min-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: multiply;
+  padding: 30px;
+  position: center;
+}
+.foot-nav {
+  text-align: center;
+  font-size: 1.1em;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.foot-nav li {
+  padding: 0 3%;
+}
+
+.btn {
+  border-radius: 4px;
+  background-color: aliceblue;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 12;
+  width: 150px;
+  padding: 0.5em;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.welcome-text {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  color: aliceblue;
+}
+
+/*Children*/
+.c-header {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  font-size: 12;
+  font-family: Libre_Baskerville;
+  color: aliceblue;
+}
+
+/*Children*/
+.containers {
+  color: aliceblue;
+  font-size: large;
+  font-family: Libre_Baskerville;
+}
+
+/*Children*/
+.table {
+  text-align: center;
+  position: relative center;
+  margin: 0 auto;
+}
+
+/*Parent*/
+.content {
+  width: 1000px;
+  max-width: 1000px;
+  min-height: 673px;
+  background-image: url(images/TAGUIG_CITY_UNIVERSITY_ADMISSION_Center.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+@media (max-width: 500px) {
+  .main-header {
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+    padding: 30px;
+    position: center;
+    width: fit-content;
+    max-width: 500px;
+    min-width: 300px;
+  }
+
+  .welcome-text {
+    font-size: 2rem;
+  }
+
+  .main-footer {
+    width: fit-content;
+    max-width: 500px;
+    min-width: 300px;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+    padding: 30px;
+    position: center;
+  }
+
+  .content {
+    width: fit-content;
+    max-width: 500px;
+    min-height: 750px;
+    background-image: url(images/TAGUIG_CITY_UNIVERSITY_ADMISSION_Center.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  .table {
+    text-align: left;
+    position: relative center;
+    margin: 0 auto;
+  }
+}

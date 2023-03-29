@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="login.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TCU | Login and Register</title>
+</head>
+
+<body>
+  <div class="container">
+    <!--Log In Page-->
+    <!--Action will be added to post form to database-->
+    <form class="form form-hidden" id="login">
+      <h1 class="form_title">Login</h1>
+      <div class="form_message form_message-error"></div>
+      <div class="form_input-group">
+        <input
+          type="text"
+          class="form_input"
+          autofocus
+          placeholder="Username or Email"
+        />
+        <div class="form_input-error-message"></div>
+      </div>
+
+      <div class="form_input-group">
+        <input
+          type="password"
+          class="form_input"
+          autofocus
+          placeholder="Password"
+        />
+        <div class="form_input-error-message"></div>
+      </div>
+
+      <button class="form_button" type="submit">Continue</button>
+
+      <!--# will be the register page-->
+      <p class="form_text">
+        <a href="#" class="form_link">Forgot your password?</a>
+      </p>
+
+      <p class="form_text">
+        <a class="form_link" id="linkCreateAccount"
+          >Don't have an account? Create account</a
+        >
+      </p>
+    </form>
+
+    <!--Create account-->
+    <form class="form" id="createAccount">
+      <h1 class="form_title">Create Account</h1>
+      <div class="form_message form_message-error"></div>
+      <div class="form_input-group">
+        <input
+          type="text"
+          class="form_input"
+          autofocus
+          placeholder="Username"
+        />
+        <div class="form_input-error-message"></div>
+      </div>
+
+      <div class="form_input-group">
+        <input
+          type="text"
+          class="form_input"
+          autofocus
+          placeholder="Email Address"
+        />
+        <div class="form_input-error-message"></div>
+      </div>
+
+      <div class="form_input-group">
+        <input
+          type="password"
+          class="form_input"
+          autofocus
+          placeholder="Password"
+        />
+        <div class="form_input-error-message"></div>
+      </div>
+
+      <div class="form_input-group">
+        <input
+          type="password"
+          class="form_input"
+          autofocus
+          placeholder="Confirm password"
+        />
+        <div class="form_input-error-message"></div>
+      </div>
+
+      <button class="form_button" type="submit">Continue</button>
+
+      <!--# will be the register page-->
+      <p class="form_text">
+        <a class="form_link" id="linklogin">Already have an account? Sign in</a>
+      </p>
+    </form>
+  </div>
+  <script src="./login.js"></script>
+</body>

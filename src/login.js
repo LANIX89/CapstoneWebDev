@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const loginForm = document.querySelector("#Login");
-    const createAccountForm = document.querySelector("#CreateAccount");
+    const loginForm = document.querySelector("#login");
+    const createAccountForm = document.querySelector("#createAccount");
 
     document.querySelector("#linkCreateAccount").addEventListener("click", e => {
         e.preventDefault();

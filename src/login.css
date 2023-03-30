@@ -13,7 +13,8 @@ body {
 
   margin: 0;
   height: 100vh;
-  display: flex;
+  width: 100%;
+  display: block;
   align-items: center;
   justify-content: center;
   font-size: 18px;
@@ -23,9 +24,10 @@ body {
 }
 
 .container {
+  margin: auto;
   width: 400px;
+  min-width: 400px;
   max-width: 400px;
-  margin: 1rem;
   padding: 2rem;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius);
@@ -165,9 +167,14 @@ body {
 }
 
 .main-header {
+  min-width: 500px;
+  display: block;
   background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: multiply;
-  padding: 30px;
-  position: top;
-  max-width: 1000px;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-text {
+  color: aliceblue;
 }

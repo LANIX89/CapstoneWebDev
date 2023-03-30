@@ -14,6 +14,7 @@ body {
   background-color: rgb(224, 216, 205);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .nav ul {
@@ -45,11 +46,12 @@ body {
 }
 
 .main-header {
+  min-width: 500px;
+  display: block;
   background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: multiply;
-  padding: 30px;
-  position: center;
-  min-width: 1000px;
+  padding: 20px;
+  text-align: center;
 }
 
 .main-footer {
@@ -176,21 +178,30 @@ body {
     padding: 30px;
     position: center;
   }
-
+  .c-header {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: Libre_Baskerville;
+    font-size: 25px;
+    color: maroon;
+  }
   .content {
-    width: fit-content;
     max-width: 500px;
-    min-height: 750px;
-    background-image: url(images/TAGUIG_CITY_UNIVERSITY_ADMISSION_Center.png);
-    background-repeat: no-repeat;
+    min-width: 300px;
+    background-color: #ffffff;
+    background-image: none;
     background-size: cover;
-    background-position: center;
     margin: 0 auto;
-    height: 100vh;
   }
   .table {
     text-align: left;
-    position: relative center;
     margin: 0 auto;
+    border: red solid 1px;
+  }
+
+  .containers {
+    color: rgb(178, 172, 172);
+    font-size: 1rem;
   }
 }

@@ -161,9 +161,9 @@ body {
     background-blend-mode: multiply;
     padding: 30px;
     position: center;
-    width: fit-content;
     max-width: 500px;
     min-width: 300px;
+    width: 100%;
   }
 
   .welcome-text {
@@ -171,8 +171,8 @@ body {
   }
 
   .main-footer {
-    width: fit-content;
-    max-width: 300px;
+    width: 100%;
+    max-width: 500px;
     min-width: 300px;
     background-color: rgba(0, 0, 0, 0.1);
     background-blend-mode: multiply;
@@ -187,19 +187,21 @@ body {
     color: maroon;
   }
   .content {
+    width: 100%;
     max-width: 450px;
     background-color: #ffffff;
     background-image: none;
     background-size: cover;
     border-radius: 10px;
     margin: 0 auto;
-    min-height: 600px;
-    height: none;
+    height: 100%;
   }
   .table {
     text-align: left;
     margin: 0 auto;
     border: red solid 1px;
+    display: flex;
+    flex-direction: column;
   }
 
   .containers {

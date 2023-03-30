@@ -15,6 +15,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  margin: 0;
 }
 
 .nav ul {
@@ -171,12 +172,11 @@ body {
 
   .main-footer {
     width: fit-content;
-    max-width: 500px;
+    max-width: 300px;
     min-width: 300px;
     background-color: rgba(0, 0, 0, 0.1);
     background-blend-mode: multiply;
     padding: 30px;
-    position: center;
   }
   .c-header {
     text-align: center;
@@ -187,12 +187,14 @@ body {
     color: maroon;
   }
   .content {
-    max-width: 500px;
-    min-width: 300px;
+    max-width: 450px;
     background-color: #ffffff;
     background-image: none;
     background-size: cover;
+    border-radius: 10px;
     margin: 0 auto;
+    min-height: 600px;
+    height: none;
   }
   .table {
     text-align: left;

@@ -64,7 +64,7 @@ body {
 
 .main-header {
   min-width: 500px;
-  display: flex;
+  display: block;
   background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: multiply;
   padding: 20px;

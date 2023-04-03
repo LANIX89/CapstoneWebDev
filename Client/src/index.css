@@ -35,6 +35,8 @@ body {
 }
 
 .nav ul {
+  display: flex;
+  justify-content: center;
   margin: 0;
 }
 .nav li {
@@ -59,16 +61,35 @@ body {
 }
 
 .main-nav li {
-  padding: 0 3%;
+  padding: 0px 20px;
 }
 
 .main-header {
-  min-width: 500px;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  background-color: rgba(223, 69, 69, 1);
   background-blend-mode: multiply;
-  padding: 20px;
+  padding: 5px;
+  padding-bottom: 5px;
   text-align: center;
+  border-bottom: 2px solid #dddddd;
+}
+
+.logo {
+  width: 5%;
+}
+.logo-text {
+  display: inline-flex;
+}
+.welcome-text {
+  margin: 1rem;
+  color: aliceblue;
+}
+
+.welcome-text {
+  margin: 1rem;
+  color: aliceblue;
 }
 
 .main-footer {
@@ -127,21 +148,15 @@ body {
   right: 0;
 }
 
-.welcome-text {
-  text-align: center;
-  margin: 0;
-  font-size: 4em;
-  color: aliceblue;
-}
-
 /*Children*/
 .c-header {
+  display: block;
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  font-size: 12;
+  font-size: 2em;
   font-family: Libre_Baskerville;
   color: aliceblue;
+  padding: 1rem;
+  padding-top: 6rem;
 }
 
 /*Children*/
@@ -149,26 +164,33 @@ body {
   color: aliceblue;
   font-size: large;
   font-family: Libre_Baskerville;
+  text-align: left;
+}
+
+/*Javascript*/
+.table-hidden {
+  display: none;
 }
 
 /*Children*/
 .table {
-  text-align: center;
-  position: relative center;
-  margin: 0 auto;
+  display: block;
+  width: 50%;
 }
 
 /*Parent*/
 .content {
-  width: 1000px;
-  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
   min-height: 673px;
-  background-image: url(images/TAGUIG_CITY_UNIVERSITY_ADMISSION_Center.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto;
   height: 100vh;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-image: url(./images/TAGUIG_CITY_UNIVERSITY_ADMISSION_Center.png);
+  background-size: cover;
 }
 
 @media (max-width: 500px) {
@@ -191,22 +213,28 @@ body {
   .main-nav {
     display: flex;
     position: fixed;
-    left: -100%;
+    left: -200%;
     margin: 0;
     padding-top: 10px;
     gap: 0;
     flex-direction: column;
-    background-color: rgb(81, 75, 75);
+    flex-wrap: wrap;
+    background-color: rgb(157, 154, 154);
     width: 100%;
     height: 100%;
-    text-align: center;
+    text-align: center left;
     transition: 0.3s;
   }
+
   .nav ul {
     margin: 0;
+    height: 100%;
+    display: inline-block;
+    align-items: center;
   }
   .nav li {
-    display: block;
+    display: inline;
+    justify-content: center;
   }
 
   .nav a {
@@ -215,27 +243,26 @@ body {
     color: white;
     text-decoration: none;
   }
-  .nav-item {
-    margin: 16px;
+
+  .nav a:hover {
+    background-color: #dddddd;
   }
 
   .main-nav.active {
     left: 0;
+    height: 100%;
   }
 
   .main-header {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.1);
     background-blend-mode: multiply;
-    padding: 30px;
-    position: center;
-    max-width: 500px;
-    min-width: 300px;
-    width: 100%;
+    padding-top: 1rem;
   }
 
   .welcome-text {
+    display: none;
     font-size: 2rem;
+    margin: 1rem;
   }
 
   .main-footer {
@@ -265,8 +292,7 @@ body {
     height: 100%;
   }
   .table {
-    text-align: left;
-    margin: 0 auto;
+    align-items: start;
     display: flex;
     flex-direction: column;
   }

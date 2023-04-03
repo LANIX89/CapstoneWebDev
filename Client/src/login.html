@@ -8,6 +8,15 @@
 
 <body>
   <header class="main-header">
+    <div class="logo-text">
+      <img
+        class="logo"
+        src="./images/Logo.jpg"
+        alt="Taguig City University Logo"
+      />
+      <h1 class="welcome-text">TCU Admission Homepage</h1>
+    </div>
+
     <nav class="nav main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -19,13 +28,18 @@
         <li><a href="login.html"> Login </a></li>
       </ul>
     </nav>
-    <h1 class="welcome-text">TCU Admission Homepage</h1>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </header>
 
   <div class="container">
     <!--Log In Page-->
     <!--Action will be added to post form to database-->
-    <form class="form form-hidden" id="login">
+    <form class="form" id="login">
       <h1 class="form_title">Login</h1>
       <div class="form_message form_message-error"></div>
       <div class="form_input-group">
@@ -63,7 +77,7 @@
     </form>
 
     <!--Create account-->
-    <form class="form" id="createAccount">
+    <form class="form form-hidden" id="createAccount">
       <h1 class="form_title">Create Account</h1>
       <div class="form_message form_message-error"></div>
       <div class="form_input-group">

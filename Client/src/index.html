@@ -6,43 +6,45 @@
 </head>
 <body>
   <header class="main-header">
+    <div class="logo-text">
+      <img
+        class="logo"
+        src="./images/Logo.jpg"
+        alt="Taguig City University Logo"
+      />
+      <h1 class="welcome-text">TCU Admission Homepage</h1>
+    </div>
+
     <nav class="nav main-nav">
       <ul>
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="Requirements.html">Requirements</a>
         </li>
 
-        <li class="nav-item">
-          <a href="Requirements.html" class="nav-link">Requirements</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="About us.html" class="nav-link"> About Us </a>
-        </li>
-        <li class="nav-item">
-          <a href="login.html" class="nav-link"> Login </a>
-        </li>
+        <li><a href="About us.html"> About Us </a></li>
+        <li><a href="login.html"> Login </a></li>
       </ul>
     </nav>
-    <h1 class="welcome-text">TCU Admission Homepage</h1>
+
     <div class="hamburger">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </div>
-
     <script src="index.js"></script>
   </header>
 
   <!--Content-->
 
   <div class="content">
-    <h2 class="c-header">Colleges</h2>
+    <div class="c-header">Colleges</div>
     <div class="table">
       <div class="containers">
         College of Arts and Sciences
         <button
           class="btn"
+          id="linkArts"
           onclick="window.location.href = 'Arts and Science.html'"
         >
           <span>Apply Now!</span>
@@ -53,6 +55,7 @@
         College of Business Management
         <button
           class="btn"
+          id="linkBusiness"
           onclick="window.location.href = 'Business Management.html'"
         >
           <span>Apply Now!</span>
@@ -63,6 +66,7 @@
         College of Criminal Justice
         <button
           class="btn"
+          id="linkCriminal"
           onclick="window.location.href = 'Criminal Justice.html'"
         >
           <span>Apply Now!</span>
@@ -71,7 +75,11 @@
       <br />
       <div class="containers">
         College of Education
-        <button class="btn" onclick="window.location.href = 'Education.html'">
+        <button
+          class="btn"
+          id="linkEdu"
+          onclick="window.location.href = 'Education.html'"
+        >
           <span>Apply Now!</span>
         </button>
       </div>
@@ -80,6 +88,7 @@
         College of Engineering and Technology
         <button
           class="btn"
+          id="linkEng"
           onclick="window.location.href = 'Engineering and Technology.html'"
         >
           <span>Apply Now!</span>
@@ -90,6 +99,7 @@
         College of Hospitality and Tourism Management
         <button
           class="btn"
+          id="linkHospital"
           onclick="window.location.href = 'Hospitality and Tourism Management.html'"
         >
           <span>Apply Now!</span>
@@ -100,6 +110,7 @@
         College of Information and Communication Technology
         <button
           class="btn"
+          id="linkICT"
           onclick="window.location.href = 'Information and Communication Technology.html'"
         >
           <span>Apply Now!</span>
@@ -110,6 +121,7 @@
         College of Graduate Studies
         <button
           class="btn"
+          id="linkGrad"
           onclick="window.location.href = 'Graduate Studies.html'"
         >
           <span>Apply Now!</span>

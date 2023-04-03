@@ -12,11 +12,9 @@ body {
   --border-radius: 4px;
 
   margin: 0;
-  height: 100vh;
   width: 100%;
   display: block;
   align-items: center;
-  justify-content: center;
   font-size: 18px;
   background: url(./images/TAGUIG\ CITY\ UNIVERSITY\ ADMISSION.png);
   background-size: cover;
@@ -24,20 +22,24 @@ body {
 }
 
 .container {
-  margin: auto;
-  width: 400px;
-  min-width: 400px;
-  max-width: 400px;
-  padding: 2rem;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-  border-radius: var(--border-radius);
-  background-color: rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: right;
 }
 
 .container,
 .form_input,
 .form_button {
-  font: 500 1rem "Libre_Baskerville", sans-serif;
+  font: 0.75rem "Libre_Baskerville", sans-serif;
+}
+
+.form {
+  width: 25%;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 .form-hidden {
@@ -75,7 +77,6 @@ body {
 }
 
 .form_input {
-  display: block;
   width: 100%;
   padding: 0.75rem;
   box-sizing: border-box;
@@ -138,7 +139,24 @@ body {
 }
 
 /*Navigation Bar Header */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
 .nav ul {
+  display: flex;
+  justify-content: center;
   margin: 0;
 }
 .nav li {
@@ -163,18 +181,113 @@ body {
 }
 
 .main-nav li {
-  padding: 0 3%;
+  padding: 0px 20px;
 }
 
 .main-header {
-  min-width: 500px;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  background-color: rgba(223, 69, 69, 1);
   background-blend-mode: multiply;
-  padding: 20px;
+  padding: 5px;
+  padding-bottom: 5px;
   text-align: center;
+  border-bottom: 2px solid #dddddd;
 }
 
+.logo {
+  width: 5%;
+}
+.logo-text {
+  display: inline-flex;
+}
 .welcome-text {
+  margin: 1rem;
   color: aliceblue;
+}
+
+/* Media Query*/
+@media (max-width: 500px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .main-nav {
+    display: flex;
+    position: fixed;
+    left: -200%;
+    margin: 0;
+    padding-top: 10px;
+    gap: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(157, 154, 154);
+    width: 100%;
+    height: 100%;
+    text-align: center left;
+    transition: 0.3s;
+  }
+
+  .nav ul {
+    margin: 0;
+    height: 100%;
+    display: inline-block;
+    align-items: center;
+  }
+  .nav li {
+    display: inline;
+    justify-content: center;
+  }
+
+  .nav a {
+    display: block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav a:hover {
+    background-color: #dddddd;
+  }
+
+  .main-nav.active {
+    left: 0;
+    height: 100%;
+  }
+
+  .main-header {
+    display: flex;
+    background-blend-mode: multiply;
+    padding-top: 1rem;
+  }
+
+  .welcome-text {
+    display: none;
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+  .container {
+    justify-content: center;
+    margin: auto;
+    min-width: 0;
+    padding: 2rem;
+  }
+
+  .form {
+    width: 75%;
+  }
 }

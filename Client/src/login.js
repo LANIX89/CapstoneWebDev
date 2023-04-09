@@ -15,11 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const hamburger = document.querySelector(".hamburger");
-const mainNav = document.querySelector(".main-nav");
+const dropDownButton = document.querySelector(".navlink");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+function dropFunction() {
+    dropdownMenu.classList.toggle("active");
+}
 
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    mainNav.classList.toggle("active");
-})

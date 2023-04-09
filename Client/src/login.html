@@ -7,36 +7,24 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="logo-text">
-      <img
-        class="logo"
-        src="./images/Logo.jpg"
-        alt="Taguig City University Logo"
-      />
-      <h1 class="welcome-text">TCU Admission Homepage</h1>
-    </div>
-
-    <nav class="nav main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>
-          <a href="Requirements.html">Requirements</a>
-        </li>
-
-        <li><a href="About us.html"> About Us </a></li>
-        <li><a href="login.html"> Login </a></li>
-      </ul>
-    </nav>
-
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
+  <header class="topPage">
+    <span class="topText">TAGUIG CITY UNIVERSITY</span>
+    <img src="./images/City Seal.png" alt="" class="topImg" />
   </header>
 
   <div class="container">
+    <div class="sideBar">
+      <div class="sideBarMain">
+        <span class="textImgTop">Apply Now!</span>
+        <img src="./images/Body BG.jpg" alt="" class="sideBarMImg" />
+      </div>
+
+      <div class="sideBarSide">
+        <img src="./images/Banner Logo.png" alt="" class="sideImg" />
+        <img src="./images/TCU Logo.png" alt="" class="sideImg" />
+        <img src="./images/IlLogo.png" alt="" class="sideImg" />
+      </div>
+    </div>
     <!--Log In Page-->
     <!--Action will be added to post form to database-->
     <form class="form" id="login">
@@ -47,6 +35,7 @@
           type="text"
           class="form_input"
           autofocus
+          required
           placeholder="Username or Email"
         />
         <div class="form_input-error-message"></div>
@@ -57,6 +46,7 @@
           type="password"
           class="form_input"
           autofocus
+          required
           placeholder="Password"
         />
         <div class="form_input-error-message"></div>
@@ -121,8 +111,6 @@
       </div>
 
       <button class="form_button" type="submit">Continue</button>
-
-      <!--# will be the register page-->
       <p class="form_text">
         <a class="form_link" id="linklogin">Already have an account? Sign in</a>
       </p>

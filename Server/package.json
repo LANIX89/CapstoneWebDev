@@ -2,17 +2,20 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "express-ejs-layouts": "^2.5.1"
+    "express-ejs-layouts": "^2.5.1",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.30.0",
+    "sequelize-cli": "^6.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

@@ -5,140 +5,87 @@
   <title>TCU | Homepage</title>
 </head>
 <body>
-  <header class="main-header">
-    <div class="logo-text">
-      <img
-        class="logo"
-        src="./images/Logo.jpg"
-        alt="Taguig City University Logo"
-      />
-      <h1 class="welcome-text">TCU Admission Homepage</h1>
-    </div>
+  <header class="topPage">
+    <span class="top">Taguig City University</span>
+    <span class="top2"
+      >Gen. Santos Ave., Central Bicutan Taguig City, Philippines</span
+    >
 
-    <nav class="nav main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>
-          <a href="Requirements.html">Requirements</a>
-        </li>
-
-        <li><a href="About us.html"> About Us </a></li>
-        <li><a href="login.html"> Login </a></li>
-      </ul>
+    <nav class="navBar">
+      <div class="navItems">
+        <div class="dropdown" -data-dropdown>
+          <button
+            class="navlink"
+            -data-dropdown-button
+            onclick="dropFunction()"
+          >
+            Colleges
+          </button>
+          <div class="dropdown-menu list-flex">
+            <a href="index.html">Arts and Science</a>
+            <a href="#">Education</a>
+            <a href="#">Criminal Justice</a>
+            <a href="#">Hospitality and Tourism Management</a>
+            <a href="#">Engineering and Technology</a>
+            <a href="#">Business Management</a>
+            <a href="#">Information and Communication Technology</a>
+          </div>
+        </div>
+        <div><a href="#">Academics</a></div>
+        <div><a href="#">Student Services</a></div>
+        <div><a href="#">Research</a></div>
+        <div><a href="#">About TCU</a></div>
+      </div>
     </nav>
-
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-    <script src="index.js"></script>
   </header>
 
-  <!--Content-->
+  <section>
+    <div class="content">
+      <h2 class="title-Aligned">COLLEGE PROGRAMS OFFERED</h2>
+      <div class="split">
+        <div class="sideBar">
+          <img src="./images/Banner Logo.png" alt="" class="sideImg" />
+          <img src="./images/TCU Logo.png" alt="" class="sideImg" />
+          <img src="./images/IlLogo.png" alt="" class="sideImg" />
+        </div>
 
-  <div class="content">
-    <div class="c-header">Colleges</div>
-    <div class="table">
-      <div class="containers">
-        College of Arts and Sciences
-        <button
-          class="btn"
-          id="linkArts"
-          onclick="window.location.href = 'Arts and Science.html'"
-        >
-          <span>Apply Now!</span>
-        </button>
-      </div>
-      <br />
-      <div class="containers">
-        College of Business Management
-        <button
-          class="btn"
-          id="linkBusiness"
-          onclick="window.location.href = 'Business Management.html'"
-        >
-          <span>Apply Now!</span>
-        </button>
-      </div>
-      <br />
-      <div class="containers">
-        College of Criminal Justice
-        <button
-          class="btn"
-          id="linkCriminal"
-          onclick="window.location.href = 'Criminal Justice.html'"
-        >
-          <span>Apply Now!</span>
-        </button>
-      </div>
-      <br />
-      <div class="containers">
-        College of Education
-        <button
-          class="btn"
-          id="linkEdu"
-          onclick="window.location.href = 'Education.html'"
-        >
-          <span>Apply Now!</span>
-        </button>
-      </div>
-      <br />
-      <div class="containers">
-        College of Engineering and Technology
-        <button
-          class="btn"
-          id="linkEng"
-          onclick="window.location.href = 'Engineering and Technology.html'"
-        >
-          <span>Apply Now!</span>
-        </button>
-      </div>
-      <br />
-      <div class="containers">
-        College of Hospitality and Tourism Management
-        <button
-          class="btn"
-          id="linkHospital"
-          onclick="window.location.href = 'Hospitality and Tourism Management.html'"
-        >
-          <span>Apply Now!</span>
-        </button>
-      </div>
-      <br />
-      <div class="containers">
-        College of Information and Communication Technology
-        <button
-          class="btn"
-          id="linkICT"
-          onclick="window.location.href = 'Information and Communication Technology.html'"
-        >
-          <span>Apply Now!</span>
-        </button>
-      </div>
-      <br />
-      <div class="containers">
-        College of Graduate Studies
-        <button
-          class="btn"
-          id="linkGrad"
-          onclick="window.location.href = 'Graduate Studies.html'"
-        >
-          <span>Apply Now!</span>
-        </button>
+        <div class="college">
+          <div class="college-item">
+            <img src="./Logo/ArtLogo.png" alt="Art" class="icon" />
+            <p>Arts and Sciences</p>
+          </div>
+
+          <div class="college-item">
+            <img src="./Logo/EduLogo.png" alt="Edu" class="icon" />
+            <p>Education</p>
+          </div>
+
+          <div class="college-item">
+            <img src="./Logo/JusticeLogo.png" alt="Just" class="icon" />
+            <p>Criminal Justice</p>
+          </div>
+
+          <div class="college-item">
+            <img src="./Logo/HotelLogo.png" alt="Hos" class="icon" />
+            <p>Hospitality and Tourism Management</p>
+          </div>
+          <div class="college-item">
+            <img src="./Logo/EngrLogo.png" alt="Engr" class="icon" />
+            <p>Engineering and Technology</p>
+          </div>
+
+          <div class="college-item">
+            <img src="./Logo/BusinessLogo.png" alt="Bus" class="icon" />
+            <p>Business Management</p>
+          </div>
+
+          <div class="college-item">
+            <img src="./Logo/ICTLogo.png" alt="ICT" class="icon" />
+            <p>Information and Communication Technology</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+  <script src="index.js"></script>
 </body>
-<footer class="main-footer">
-  <nav class="nav foot-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>
-        <a href="Requirements.html">Requirements</a>
-      </li>
-      <li><a href="About us.html"> About Us </a></li>
-      <li><a href="login.html"> Login </a></li>
-    </ul>
-  </nav>
-</footer>

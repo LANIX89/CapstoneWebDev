@@ -2,303 +2,184 @@
   src: url(fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
   font-family: Libre_Baskerville;
 }
+:root {
+  --img-radius-icon: 10px;
+  --img-size-icon: 5em;
+}
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 body {
-  background-image: url("images/TAGUIG\ CITY\ UNIVERSITY\ ADMISSION.png");
+  background-image: url("./images/Body\ BG.jpg");
   background-color: rgb(224, 216, 205);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3125rem;
+  line-height: 1.6;
   margin: 0;
 }
 
-/* Navigation */
-.hamburger {
-  display: none;
-  cursor: pointer;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
+h1,
+h2,
+h3 {
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 1em;
 }
 
-.nav ul {
+/* Main Body*/
+section {
   display: flex;
   justify-content: center;
-  margin: 0;
-}
-.nav li {
-  display: inline;
+  padding: 3rem;
 }
 
-.nav a {
-  display: inline-block;
-  padding: 0.5em;
-  color: white;
-  text-decoration: none;
-}
-
-.nav a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.main-nav {
-  text-align: center;
-  font-size: 1.1em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.main-nav li {
-  padding: 0px 20px;
-}
-
-.main-header {
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  background-color: rgba(223, 69, 69, 1);
-  background-blend-mode: multiply;
-  padding: 5px;
-  padding-bottom: 5px;
-  text-align: center;
-  border-bottom: 2px solid #dddddd;
-}
-
-.logo {
-  width: 5%;
-}
-.logo-text {
-  display: inline-flex;
-}
-.welcome-text {
-  margin: 1rem;
-  color: aliceblue;
-}
-
-.welcome-text {
-  margin: 1rem;
-  color: aliceblue;
-}
-
-.main-footer {
-  min-width: 1000px;
-  background-color: rgba(0, 0, 0, 0.1);
-  background-blend-mode: multiply;
-  padding: 30px;
-  position: center;
-}
-.foot-nav {
-  text-align: center;
-  font-size: 1.1em;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.foot-nav li {
-  padding: 0 3%;
-}
-
-.btn {
-  border-radius: 4px;
-  background-color: aliceblue;
-  border: none;
-  color: black;
-  text-align: center;
-  font-size: 12;
-  width: 150px;
-  padding: 0.5em;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.btn span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.btn span:after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.btn:hover span {
-  padding-right: 25px;
-}
-
-.btn:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-/*Children*/
-.c-header {
-  display: block;
-  text-align: center;
-  font-size: 2em;
-  font-family: Libre_Baskerville;
-  color: aliceblue;
-  padding: 1rem;
-  padding-top: 6rem;
-}
-
-/*Children*/
-.containers {
-  color: aliceblue;
-  font-size: large;
-  font-family: Libre_Baskerville;
-  text-align: left;
-}
-
-/*Javascript*/
-.table-hidden {
-  display: none;
-}
-
-/*Children*/
-.table {
-  display: block;
-  width: 50%;
-}
-
-/*Parent*/
 .content {
+  max-width: max-content;
+  background-color: #ffff;
+}
+
+.split {
+  display: flex;
+  gap: 1rem;
+}
+.split :nth-child(1) {
+  width: 20%;
+}
+.split :nth-child(2) {
+  width: 80%;
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+}
+
+.college {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+
+/*Side Bar - Main Body*/
+
+.sideBar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  gap: 3rem;
+}
+.sideBar > :nth-child(1) {
   width: 100%;
-  min-height: 673px;
-  height: 100vh;
-  margin: 10px;
-  background-repeat: no-repeat;
-  background-image: url(./images/TAGUIG_CITY_UNIVERSITY_ADMISSION_Center.png);
-  background-size: cover;
+  height: auto;
+}
+.sideImg {
+  width: 100%;
+  height: auto;
 }
 
-@media (max-width: 500px) {
-  .hamburger {
-    display: block;
-  }
+.topPage {
+  display: flex;
+  flex-direction: column;
+}
 
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
+.top {
+  background-color: red;
+  color: #ffff;
+  display: block;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  margin: 0;
+  font-weight: bold;
+}
 
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
+.top2 {
+  background-color: red;
+  color: #ffff;
+  display: block;
+  margin: 0;
+  padding: 0 0.5rem;
+}
 
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+/* Navbar*/
+.navBar {
+  padding: 0 1rem;
+  background-color: #ffff;
+}
+.navItems {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
 
-  .main-nav {
-    display: flex;
-    position: fixed;
-    left: -200%;
-    margin: 0;
-    padding-top: 10px;
-    gap: 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: rgb(157, 154, 154);
-    width: 100%;
-    height: 100%;
-    text-align: center left;
-    transition: 0.3s;
-  }
+.navlink {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #777;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1em;
+}
 
-  .nav ul {
-    margin: 0;
-    height: 100%;
-    display: inline-block;
-    align-items: center;
-  }
-  .nav li {
-    display: inline;
-    justify-content: center;
-  }
+.navlink:hover {
+  color: black;
+}
 
-  .nav a {
-    display: block;
-    padding: 0.5em;
-    color: white;
-    text-decoration: none;
-  }
+.dropdown {
+  position: relative;
+}
 
-  .nav a:hover {
-    background-color: #dddddd;
-  }
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  background-color: #ffff;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  gap: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
 
-  .main-nav.active {
-    left: 0;
-    height: 100%;
-  }
+.list-flex {
+  display: flex;
+  flex: 1 1 33%;
+  flex-direction: row;
+  gap: 3rem;
+}
+.list-flex > * {
+  text-decoration: none;
+  color: #777;
+  border-color: red;
+}
 
-  .main-header {
-    display: flex;
-    background-blend-mode: multiply;
-    padding-top: 1rem;
-  }
+.list-flex > *:hover {
+  color: black;
+}
 
-  .welcome-text {
-    display: none;
-    font-size: 2rem;
-    margin: 1rem;
-  }
-
-  .main-footer {
-    width: 100%;
-    max-width: 500px;
-    min-width: 300px;
-    background-color: rgba(0, 0, 0, 0.1);
-    background-blend-mode: multiply;
-    padding: 30px;
-  }
-  .c-header {
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-family: Libre_Baskerville;
-    font-size: 25px;
-    color: maroon;
-  }
-  .content {
-    width: 100%;
-    max-width: 450px;
-    background-color: #ffffff;
-    background-image: none;
-    background-size: cover;
-    border-radius: 10px;
-    margin: 0 auto;
-    height: 100%;
-  }
-  .table {
-    align-items: start;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .containers {
-    color: rgb(178, 172, 172);
-    font-size: 1rem;
-  }
+.dropdown-menu.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.dropdown.active > .dropdown-menu > * {
+  color: black;
+  text-decoration: none;
 }

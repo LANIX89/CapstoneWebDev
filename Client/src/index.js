@@ -1,18 +1,6 @@
-const hamburger = document.querySelector(".hamburger");
-const mainNav = document.querySelector(".main-nav");
+const dropDownButton = document.querySelector(".navlink");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+function dropFunction() {
+    dropdownMenu.classList.toggle("active");
+}
 
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    mainNav.classList.toggle("active");
-})
-
-document.addEventListener("DOMContentLoaded", () => {
-    const tableHide = document.querySelector("#table");
-
-    document.querySelector("#hideForm").addEventListener("click", e => {
-        e.preventDefault();
-        tableHide.classList.add("table-hidden");
-    });
-
-});

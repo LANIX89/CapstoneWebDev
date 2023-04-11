@@ -1,13 +1,9 @@
-@font-face {
-  src: url(fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
-  font-family: Libre_Baskerville;
-}
-:root {
-  --img-radius-icon: 10px;
-  --img-size-icon: 5em;
-}
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --padding: 3rem;
 }
 
 body {
@@ -34,59 +30,6 @@ h3 {
   text-align: center;
   line-height: 1;
   margin-bottom: 1em;
-}
-
-/* Main Body*/
-section {
-  display: flex;
-  justify-content: center;
-  padding: 3rem;
-}
-
-.content {
-  max-width: max-content;
-  background-color: #ffff;
-}
-
-.split {
-  display: flex;
-  gap: 1rem;
-}
-.split :nth-child(1) {
-  width: 20%;
-}
-.split :nth-child(2) {
-  width: 80%;
-}
-
-.icon {
-  width: 100%;
-  height: auto;
-}
-
-.college {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  padding-block: 2rem;
-  width: min(95%, 70rem);
-  margin-inline: auto;
-}
-
-/*Side Bar - Main Body*/
-
-.sideBar {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-.sideBar > :nth-child(1) {
-  width: 100%;
-  height: auto;
-}
-.sideImg {
-  width: 100%;
-  height: auto;
 }
 
 .topPage {
@@ -190,4 +133,112 @@ section {
 .dropdown > .dropdown-menu > * {
   color: black;
   text-decoration: none;
+}
+
+/*Main Body*/
+
+.container {
+  position: relative;
+  padding: 5rem;
+  margin-top: 7rem;
+}
+
+.pageTitle {
+  position: absolute;
+  font-family: "Libre Baskerville", serif;
+  background-color: white;
+  padding: 0.5rem;
+  font-size: 1.25em;
+  top: 3rem;
+  left: 23rem;
+}
+
+.userId {
+  position: absolute;
+  background-color: #d3d3d3;
+  padding: 0.5rem;
+  font-size: 1.25em;
+  top: 3rem;
+  right: 9rem;
+}
+
+/*Three Flex*/
+.split {
+  display: flex;
+  background-color: #777;
+}
+
+/*Parent / Children*/
+.sideBanner {
+  width: 20%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sideIMG {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+}
+
+/*Parent / Children*/
+.mainContent {
+  width: 60%;
+  padding: var(--padding);
+  border: 1px solid red;
+}
+
+.contentTitle {
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  width: max-content;
+  justify-content: left;
+}
+
+.content {
+  background-color: #d3d3d3;
+}
+
+ol {
+  padding: 1rem;
+}
+
+li {
+  margin: 1rem;
+}
+
+/*Parent / Children*/
+.sideWelcome {
+  width: 20%;
+  margin: 4rem 1rem;
+  padding: 2rem;
+  background-color: red;
+  border: 1px solid red;
+}
+
+.sideWelcome > * {
+  color: white;
+}
+.mainWelcomeText {
+  margin: 1rem;
+}
+
+.welcome {
+  margin: 2rem;
+  font: 1em;
+  font-weight: 500;
+}
+
+.taguig {
+  margin: 0 2rem;
+  font-size: 1em;
+  font-weight: 800;
+}
+.scholars {
+  margin: 0 2rem;
+  font-size: 2em;
+  font-family: "Calligraffitti", cursive;
+  font-weight: 700;
 }

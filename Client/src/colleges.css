@@ -36,59 +36,6 @@ h3 {
   margin-bottom: 1em;
 }
 
-/* Main Body*/
-section {
-  display: flex;
-  justify-content: center;
-  padding: 3rem;
-}
-
-.content {
-  max-width: max-content;
-  background-color: #ffff;
-}
-
-.split {
-  display: flex;
-  gap: 1rem;
-}
-.split :nth-child(1) {
-  width: 20%;
-}
-.split :nth-child(2) {
-  width: 80%;
-}
-
-.icon {
-  width: 100%;
-  height: auto;
-}
-
-.college {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  padding-block: 2rem;
-  width: min(95%, 70rem);
-  margin-inline: auto;
-}
-
-/*Side Bar - Main Body*/
-
-.sideBar {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-.sideBar > :nth-child(1) {
-  width: 100%;
-  height: auto;
-}
-.sideImg {
-  width: 100%;
-  height: auto;
-}
-
 .topPage {
   display: flex;
   flex-direction: column;
@@ -190,4 +137,118 @@ section {
 .dropdown > .dropdown-menu > * {
   color: black;
   text-decoration: none;
+}
+
+/*Main Body*/
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.content {
+  max-width: max-content;
+}
+.title-Aligned {
+  background-color: white;
+  justify-content: right;
+  width: max-content;
+  padding: 0.75rem;
+  margin-left: 3rem;
+}
+.split {
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+.banner {
+  width: 20%;
+}
+
+.bannerWlogo {
+  width: 250px;
+  height: auto;
+}
+
+/* College Main */
+.college-body {
+  width: 80%;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: #ff8484;
+}
+
+.college-split {
+  margin: 1rem;
+  display: flex;
+  flex: 1 1 100%;
+  max-width: max-content;
+  flex-direction: row;
+}
+
+.college-title {
+  width: max-content;
+  margin: auto;
+  margin-top: 0;
+  background-color: rgb(246, 0, 0);
+  color: white;
+  padding: 1rem;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.college-desc {
+  font-family: "Times New Roman", Times, serif;
+  width: 80%;
+  background-color: rgb(255, 218, 218);
+  padding: 1rem;
+}
+
+.college-logo {
+  width: 20%;
+}
+
+.college-img {
+  width: 200px;
+  height: auto;
+}
+
+/* Side */
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Offered Course*/
+
+.off-col {
+  display: flex;
+  position: relative;
+  background-color: rgba(255, 132, 132, 0.75);
+  width: 100%;
+  border-radius: 20px;
+}
+
+.off-col-title {
+  position: absolute;
+  top: -3rem;
+  background-color: red;
+  color: white;
+  width: max-content;
+  justify-content: right;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+li {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+p {
+  color: white;
+  font-weight: bolder;
+  text-shadow: 1px 1px black;
 }

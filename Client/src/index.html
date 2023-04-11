@@ -3,6 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="index.css" />
   <title>TCU | Homepage</title>
+  <script src="navBar.js" defer></script>
 </head>
 <body>
   <header class="topPage">
@@ -13,14 +14,8 @@
 
     <nav class="navBar">
       <div class="navItems">
-        <div class="dropdown" -data-dropdown>
-          <button
-            class="navlink"
-            -data-dropdown-button
-            onclick="dropFunction()"
-          >
-            Colleges
-          </button>
+        <div class="dropdown">
+          <button class="navlink">Colleges</button>
           <div class="dropdown-menu list-flex">
             <a href="index.html">Arts and Science</a>
             <a href="#">Education</a>
@@ -31,10 +26,38 @@
             <a href="#">Information and Communication Technology</a>
           </div>
         </div>
-        <div><a href="#">Academics</a></div>
-        <div><a href="#">Student Services</a></div>
-        <div><a href="#">Research</a></div>
-        <div><a href="#">About TCU</a></div>
+
+        <div class="dropdown">
+          <button class="navlink">Admission</button>
+          <div class="dropdown-menu list-flex">
+            <a href="index.html">Freshmen's Requirements</a>
+            <a href="#">Online Admission Procedures</a>
+            <a href="#">Enrollment Procedures</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="navlink">Student Service</button>
+          <div class="dropdown-menu list-flex">
+            <a href="index.html">LANI Scholarship</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="navlink">Research</button>
+          <div class="dropdown-menu list-flex">
+            <!--To be filled-->
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="navlink">About TCU</button>
+          <div class="dropdown-menu list-flex">
+            <a href="index.html">TCU History</a>
+            <a href="#">Taguig HYMN</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -87,5 +110,4 @@
       </div>
     </div>
   </section>
-  <script src="index.js"></script>
 </body>

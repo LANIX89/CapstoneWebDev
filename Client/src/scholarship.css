@@ -196,7 +196,13 @@ h3 {
 }
 
 .content {
+  padding: 2rem;
   background-color: #d3d3d3;
+}
+
+.subTitle {
+  font-weight: bold;
+  margin: 1rem 0;
 }
 
 ol {

@@ -150,7 +150,7 @@ h3 {
   padding: 0.5rem;
   font-size: 1.25em;
   top: 3rem;
-  left: 23rem;
+  left: 17rem;
 }
 
 .userId {
@@ -196,6 +196,7 @@ h3 {
 }
 
 .content {
+  padding: 2rem;
   background-color: #d3d3d3;
 }
 

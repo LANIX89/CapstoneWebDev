@@ -1,11 +1,3 @@
-@font-face {
-  src: url(fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
-  font-family: Libre_Baskerville;
-}
-:root {
-  --img-radius-icon: 10px;
-  --img-size-icon: 5em;
-}
 * {
   box-sizing: border-box;
 }
@@ -114,13 +106,19 @@ h3 {
 }
 
 .list-flex {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex: 1 1 33%;
+  flex-direction: row;
+  gap: 3rem;
+}
+.list-flex > * {
+  text-decoration: none;
+  color: #777;
+  border-color: red;
 }
 
-.list-flex > a:hover {
-  background-color: rgba(211, 211, 211, 0.5);
+.list-flex > *:hover {
+  color: black;
 }
 
 .dropdown.active > .navlink + .dropdown-menu {
@@ -136,113 +134,79 @@ h3 {
 /*Main Body*/
 
 section {
-  display: flex;
-  justify-content: center;
   padding: 3rem;
 }
-.content {
-  max-width: max-content;
-}
-.title-Aligned {
-  background-color: white;
-  justify-content: right;
-  width: max-content;
-  padding: 0.75rem;
-  margin-left: 3rem;
-}
-.split {
-  margin: 0;
+.container {
   display: flex;
-  gap: 1rem;
-}
-.banner {
-  width: 20%;
 }
 
-.bannerWlogo {
-  width: 250px;
-  height: auto;
+/*Main*/
+.c-container {
+  width: 70%;
+  position: relative;
+  padding: 5rem 2rem;
 }
 
-/* College Main */
-.college-body {
-  width: 80%;
-  padding: 2rem;
-  border-radius: 20px;
-  background-color: #ff8484;
-}
-
-.college-split {
-  margin: 1rem;
-  display: flex;
-  flex: 1 1 100%;
-  max-width: max-content;
-  flex-direction: row;
-}
-
-.college-title {
-  width: max-content;
-  margin: auto;
-  margin-top: 0;
-  background-color: rgb(246, 0, 0);
-  color: white;
-  padding: 1rem;
-  text-shadow: 2px 2px rgb(0, 0, 0);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.college-desc {
+.topTitle {
   font-family: "Times New Roman", Times, serif;
-  width: 80%;
-  background-color: rgb(255, 218, 218);
+  color: #ffff;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   padding: 1rem;
+  border-radius: 10px;
+  max-width: max-content;
 }
 
-.college-logo {
-  width: 20%;
-}
-
-.college-img {
-  width: 200px;
-  height: auto;
-}
-
-/* Side */
-.banner {
+.children {
   display: flex;
   flex-direction: column;
 }
 
-/*Offered Course*/
-
-.off-col {
-  display: flex;
-  position: relative;
-  background-color: rgba(255, 132, 132, 0.75);
-  width: 100%;
-  border-radius: 20px;
-}
-
-.off-col-title {
-  position: absolute;
-  top: -3rem;
-  background-color: red;
-  color: white;
-  width: max-content;
-  justify-content: right;
+.cards {
+  margin: 1rem;
   padding: 1rem;
-  margin: 0.5rem 1rem;
   border-radius: 10px;
+  font-family: "Libre Baskerville", serif;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-li {
-  color: white;
-  font-weight: bold;
-  text-shadow: 1px 1px black;
+/*Banner*/
+.banner {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: right;
+}
+.bannerImg {
+  width: 500px;
+  height: auto;
 }
 
-p {
-  color: white;
-  font-weight: bolder;
-  text-shadow: 1px 1px black;
+.TcuImg {
+  width: 400px;
+  height: auto;
+
+  background-color: white;
+  background-position: center;
+}
+
+/*Open Animation*/
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(+100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.cards {
+  animation: 1s ease-in-out 0s 1 slideInFromBottom;
 }

@@ -1,0 +1,92 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+  max-width: fit-content;
+}
+
+input {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.Container button {
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.Container button:hover {
+  cursor: pointer;
+}
+
+.lineBreak {
+  width: 1000px;
+  height: 2px;
+  color: black;
+  background-color: black;
+  border-width: 0;
+}
+
+.applicantSec {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+  max-width: fit-content;
+}
+
+.applicantSec button {
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.applicantList {
+  display: flex;
+  width: 700px;
+  height: auto;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif, monospace;
+}
+
+.applicantList h3 {
+  margin: 20px;
+}
+
+
+/*List*/
+
+.changeUpDel{
+  display: flex;
+  flex-direction:row;
+  margin-top: 1rem;
+}
+
+.listInput{
+  width: 20rem;
+  height: 1.5rem;
+}
+
+.changeUpDel button{
+  width: 5rem;
+  margin-top: 0;
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+
+.changeUpDel button:hover{
+  background-color: rgb(185, 177, 177);
+}

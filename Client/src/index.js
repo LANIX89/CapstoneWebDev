@@ -1,16 +1,16 @@
-document.addEventListener("click", e => {
-    const isDropdownButton = e.target.matches(".navlink")
-    if (!isDropdownButton && e.target.closest('.dropdown') != null) return
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-    let currentDropdown
-    if (isDropdownButton) {
-        currentDropdown = e.target.closest('.dropdown')
-        currentDropdown.classList.toggle('active')
-    }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-    document.querySelectorAll('.dropdown.active').forEach(dropdown => {
-        if (dropdown === currentDropdown) return
-        dropdown.classList.remove('active')
-    })
-
-})
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
